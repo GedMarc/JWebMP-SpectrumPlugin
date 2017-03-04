@@ -26,7 +26,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  * @author GedMarc
  * @since 2015/05/02
  */
-public class JQUIColourPickerOptions extends JavaScriptPart
+public class JQSpectrumColourPickerOptions extends JavaScriptPart
 {
 
     private static final long serialVersionUID = 1L;
@@ -134,7 +134,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * This will also change the format that is displayed in the titles from the palette swatches.
      * <p>
      */
-    private JQUIPaletteFormats preferredFormat;
+    private JQSpectrumaletteFormats preferredFormat;
     /**
      *
      * <p>
@@ -147,7 +147,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
     /**
      *
      */
-    private JQUIColourPalettes palette;
+    private JQSpectrumColourPalettes palette;
     /**
      *
      * <p>
@@ -156,7 +156,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * If a localStorageKey is defined, then this value will be overwritten by it.
      * <p>
      */
-    private JQUIColourPalette selectionPalette;
+    private JQSpectrumColourPalette selectionPalette;
 
     /**
      * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.
@@ -538,7 +538,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * This will also change the format that is displayed in the titles from the palette swatches.
      * <p>
      */
-    public JQUIPaletteFormats getPreferredFormat()
+    public JQSpectrumaletteFormats getPreferredFormat()
     {
         return preferredFormat;
     }
@@ -551,7 +551,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * This will also change the format that is displayed in the titles from the palette swatches.
      * <p>
      */
-    public void setPreferredFormat(JQUIPaletteFormats preferredFormat)
+    public void setPreferredFormat(JQSpectrumaletteFormats preferredFormat)
     {
         this.preferredFormat = preferredFormat;
     }
@@ -584,12 +584,12 @@ public class JQUIColourPickerOptions extends JavaScriptPart
         this.maxSelectionSize = maxSelectionSize;
     }
 
-    public JQUIColourPalettes getPalette()
+    public JQSpectrumColourPalettes getPalette()
     {
         return palette;
     }
 
-    public void setPalette(JQUIColourPalettes palette)
+    public void setPalette(JQSpectrumColourPalettes palette)
     {
         this.palette = palette;
     }
@@ -603,7 +603,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * <p>
      * @return
      */
-    public JQUIColourPalette getSelectionPalette()
+    public JQSpectrumColourPalette getSelectionPalette()
     {
         return selectionPalette;
     }
@@ -617,7 +617,7 @@ public class JQUIColourPickerOptions extends JavaScriptPart
      * <p>
      * @param selectionPalette
      */
-    public void setSelectionPalette(JQUIColourPalette selectionPalette)
+    public void setSelectionPalette(JQSpectrumColourPalette selectionPalette)
     {
         this.selectionPalette = selectionPalette;
     }

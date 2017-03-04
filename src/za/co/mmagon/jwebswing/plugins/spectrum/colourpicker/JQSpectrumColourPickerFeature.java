@@ -29,17 +29,17 @@ import za.co.mmagon.jwebswing.plugins.pools.jqspectrum.JQSpectrumColourPickerRef
  * @since 25 Jun 2013
  * @version 1.0
  */
-public class JQUIColourPickerFeature extends Feature<JQUIColourPickerOptions, JQUIColourPickerFeature>
+public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
 
     private static final long serialVersionUID = 1L;
-    private JQUIColourPickerOptions colourOptions;
-    private final JQUIColourPicker picker;
+    private JQSpectrumColourPickerOptions colourOptions;
+    private final JQSpectrumColourPicker picker;
 
     /**
      * Constructs a new instance of the JW Colour Picker ComponentFeatureBase
      */
-    public JQUIColourPickerFeature(JQUIColourPicker picker)
+    public JQSpectrumColourPickerFeature(JQSpectrumColourPicker picker)
     {
         super("JWColourPickerFeature");
         this.picker = picker;
@@ -61,11 +61,11 @@ public class JQUIColourPickerFeature extends Feature<JQUIColourPickerOptions, JQ
      * @return
      */
     @Override
-    public JQUIColourPickerOptions getOptions()
+    public JQSpectrumColourPickerOptions getOptions()
     {
         if (this.colourOptions == null)
         {
-            colourOptions = new JQUIColourPickerOptions();
+            colourOptions = new JQSpectrumColourPickerOptions();
         }
         return colourOptions;
     }
@@ -75,7 +75,7 @@ public class JQUIColourPickerFeature extends Feature<JQUIColourPickerOptions, JQ
      * <p>
      * @return
      */
-    public JQUIColourPicker getPicker()
+    public JQSpectrumColourPicker getPicker()
     {
         return picker;
     }

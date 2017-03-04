@@ -23,12 +23,14 @@ import java.io.Serializable;
  * @author GedMarc
  * @since 02 May 2015
  */
-public class JQUIColourPalette implements Serializable
+public class JQSpectrumColourPalettes implements Serializable
 {
 
-    private String color;
+    private static final long serialVersionUID = 1L;
 
-    public JQUIColourPalette()
+    private JQSpectrumColourPalette[] palettes;
+
+    public JQSpectrumColourPalettes()
     {
 
     }
