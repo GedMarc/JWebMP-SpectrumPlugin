@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,7 +37,7 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
                    pluginOriginalHomepage = "https://bgrins.github.io/spectrum/",
                    pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/SpectrumPlugin.jar/download",
                    pluginIconUrl = "bower_components/spectrum/icon.png",
-                   pluginIconImageUrl = "bower_components/spectrum/example.jpg",
+                   pluginIconImageUrl = "bower_components/spectrum/example.png",
                    pluginLastUpdatedDate = "2017/03/04"
 )
 public class JQSpectrumPageConfigurator extends PageConfigurator
