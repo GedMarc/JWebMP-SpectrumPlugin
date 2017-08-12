@@ -19,17 +19,16 @@ package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
 import java.io.Serializable;
 
 /**
- *
  * @author GedMarc
  * @since 02 May 2015
  */
 public class JQSpectrumColourPalette implements Serializable
 {
 
-    private String color;
+	private String color;
 
-    public JQSpectrumColourPalette()
-    {
+	public JQSpectrumColourPalette()
+	{
 
-    }
+	}
 }

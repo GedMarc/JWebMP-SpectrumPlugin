@@ -25,59 +25,62 @@ import za.co.mmagon.jwebswing.plugins.pools.jqspectrum.JQSpectrumColourPickerRef
  * <p>
  * http://bgrins.github.io/spectrum/#why
  * <p>
+ *
  * @author MMagon
- * @since 25 Jun 2013
  * @version 1.0
+ * @since 25 Jun 2013
  */
 public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
 
-    private static final long serialVersionUID = 1L;
-    private JQSpectrumColourPickerOptions colourOptions;
-    private final JQSpectrumColourPicker picker;
+	private static final long serialVersionUID = 1L;
+	private final JQSpectrumColourPicker picker;
+	private JQSpectrumColourPickerOptions colourOptions;
 
-    /**
-     * Constructs a new instance of the JW Colour Picker ComponentFeatureBase
-     */
-    public JQSpectrumColourPickerFeature(JQSpectrumColourPicker picker)
-    {
-        super("JWColourPickerFeature");
-        this.picker = picker;
-        getJavascriptReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getJavaScriptReference());
-        getCssReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getCssReference());
+	/**
+	 * Constructs a new instance of the JW Colour Picker ComponentFeatureBase
+	 */
+	public JQSpectrumColourPickerFeature(JQSpectrumColourPicker picker)
+	{
+		super("JWColourPickerFeature");
+		this.picker = picker;
+		getJavascriptReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getJavaScriptReference());
+		getCssReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getCssReference());
 
-    }
+	}
 
-    @Override
-    public void assignFunctionsToComponent()
-    {
-        String s = picker.getJQueryID() + "spectrum(" + getOptions() + ");" + getNewLine();
-        addQuery(s);
-    }
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		String s = picker.getJQueryID() + "spectrum(" + getOptions() + ");" + getNewLine();
+		addQuery(s);
+	}
 
-    /**
-     * Returns the options associated with the Spectrum Colour Picker
-     * <p>
-     * @return
-     */
-    @Override
-    public JQSpectrumColourPickerOptions getOptions()
-    {
-        if (this.colourOptions == null)
-        {
-            colourOptions = new JQSpectrumColourPickerOptions();
-        }
-        return colourOptions;
-    }
+	/**
+	 * Returns the options associated with the Spectrum Colour Picker
+	 * <p>
+	 *
+	 * @return
+	 */
+	@Override
+	public JQSpectrumColourPickerOptions getOptions()
+	{
+		if (this.colourOptions == null)
+		{
+			colourOptions = new JQSpectrumColourPickerOptions();
+		}
+		return colourOptions;
+	}
 
-    /**
-     * Returns the JQUIColourPicker associated with this feature
-     * <p>
-     * @return
-     */
-    public JQSpectrumColourPicker getPicker()
-    {
-        return picker;
-    }
+	/**
+	 * Returns the JQUIColourPicker associated with this feature
+	 * <p>
+	 *
+	 * @return
+	 */
+	public JQSpectrumColourPicker getPicker()
+	{
+		return picker;
+	}
 
 }

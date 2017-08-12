@@ -23,44 +23,45 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
 /**
  * The references for the JWColourPicker
  * <p>
+ *
  * @author GedMarc
  * @since 01 May 2015
  */
 public enum JQSpectrumColourPickerReferencePool implements ReferencePool
 {
 
-    SpectrumColourPicker(new JQSpectrumColourPickerJavaScriptReference(), new JQSpectrumColourPickerCSSReference());
+	SpectrumColourPicker(new JQSpectrumColourPickerJavaScriptReference(), new JQSpectrumColourPickerCSSReference());
 
-    private JavascriptReference javaScriptReference;
-    private CSSReference cssReference;
+	private JavascriptReference javaScriptReference;
+	private CSSReference cssReference;
 
-    private JQSpectrumColourPickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-        this.cssReference = cssReference;
-    }
+	private JQSpectrumColourPickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+		this.cssReference = cssReference;
+	}
 
-    @Override
-    public JavascriptReference getJavaScriptReference()
-    {
-        return javaScriptReference;
-    }
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
 
-    @Override
-    public void setJavaScriptReference(JavascriptReference javaScriptReference)
-    {
-        this.javaScriptReference = javaScriptReference;
-    }
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
+	}
 
-    @Override
-    public CSSReference getCssReference()
-    {
-        return cssReference;
-    }
+	@Override
+	public CSSReference getCssReference()
+	{
+		return cssReference;
+	}
 
-    @Override
-    public void setCssReference(CSSReference cssReference)
-    {
-        this.cssReference = cssReference;
-    }
+	@Override
+	public void setCssReference(CSSReference cssReference)
+	{
+		this.cssReference = cssReference;
+	}
 }

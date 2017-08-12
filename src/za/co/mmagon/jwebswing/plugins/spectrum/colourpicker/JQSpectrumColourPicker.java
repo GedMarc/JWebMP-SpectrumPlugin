@@ -24,6 +24,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * <p>
  * http://bgrins.github.com/spectrum
  * <p>
+ *
  * @author GedMarc
  * @since 01 May 2015
  */
@@ -31,26 +32,26 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 public class JQSpectrumColourPicker extends InputTextType
 {
 
-    private static final long serialVersionUID = 1L;
-    private final JQSpectrumColourPickerFeature feature;
+	private static final long serialVersionUID = 1L;
+	private final JQSpectrumColourPickerFeature feature;
 
-    /**
-     * Constructs a new colour picker
-     */
-    public JQSpectrumColourPicker()
-    {
-        feature = new JQSpectrumColourPickerFeature(this);
-        addFeature(feature);
-    }
+	/**
+	 * Constructs a new colour picker
+	 */
+	public JQSpectrumColourPicker()
+	{
+		feature = new JQSpectrumColourPickerFeature(this);
+		addFeature(feature);
+	}
 
-    /**
-     * Returns the features available options
-     *
-     * @return
-     */
-    @Override
-    public JQSpectrumColourPickerOptions getOptions()
-    {
-        return feature.getOptions();
-    }
+	/**
+	 * Returns the features available options
+	 *
+	 * @return
+	 */
+	@Override
+	public JQSpectrumColourPickerOptions getOptions()
+	{
+		return feature.getOptions();
+	}
 }

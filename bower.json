@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-	"spectrum": "^1.8.0"
+    "spectrum": "^1.8.0"
   }
 }

@@ -17,16 +17,15 @@
 package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
 
 /**
- *
  * @author GedMarc
  * @since 02 May 2015
  */
 public enum JQSpectrumaletteFormats
 {
 
-    Hex,
-    Hex3,
-    HSL,
-    RGB,
-    Name
+	Hex,
+	Hex3,
+	HSL,
+	RGB,
+	Name
 }

@@ -19,23 +19,22 @@ package za.co.mmagon.jwebswing.plugins.pools.jqspectrum;
 import za.co.mmagon.jwebswing.base.references.CSSReference;
 
 /**
- *
  * @author GedMarc
- * @since Mar 8, 2015
  * @version 1.0
  * <p>
  * <p>
+ * @since Mar 8, 2015
  */
 class JQSpectrumColourPickerCSSReference extends CSSReference
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /**
-     *
-     */
-    public JQSpectrumColourPickerCSSReference()
-    {
-        super("JWColourPickerCSS", 1.113, "bower_components/spectrum/spectrum.css", "bower_components/spectrum/spectrum.css");
-    }
+	/**
+	 *
+	 */
+	public JQSpectrumColourPickerCSSReference()
+	{
+		super("JWColourPickerCSS", 1.113, "bower_components/spectrum/spectrum.css", "bower_components/spectrum/spectrum.css");
+	}
 }
