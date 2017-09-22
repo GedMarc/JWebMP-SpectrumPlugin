@@ -24,11 +24,11 @@ import java.io.Serializable;
  */
 public class JQSpectrumColourPalette implements Serializable
 {
-
+	
 	private String color;
-
+	
 	public JQSpectrumColourPalette()
 	{
-
+	
 	}
 }

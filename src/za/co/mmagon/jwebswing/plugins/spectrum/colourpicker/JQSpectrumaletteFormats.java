@@ -22,7 +22,7 @@ package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
  */
 public enum JQSpectrumaletteFormats
 {
-
+	
 	Hex,
 	Hex3,
 	HSL,

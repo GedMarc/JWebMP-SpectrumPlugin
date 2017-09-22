@@ -693,7 +693,7 @@
             set(colorOnShow, true);
         }
 
-        function set (color, ignoreFormatChange) {
+        function set(color, ignoreFormatChange) {
             if (tinycolor.equals(color, get())) {
                 // Update UI just in case a validation error needs
                 // to be cleared.
@@ -721,7 +721,7 @@
             }
         }
 
-        function get (opts) {
+        function get(opts) {
             opts = opts || {};
 
             if (allowEmpty && isEmpty) {
