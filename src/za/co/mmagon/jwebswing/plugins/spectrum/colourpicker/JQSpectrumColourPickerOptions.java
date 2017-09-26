@@ -94,7 +94,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 * <p>
 	 * Spectrum can keep track of what has been selected by the user with the showSelectionPalette option.
 	 * <p>
-	 * If the localStorageKey option is defined, the selection will be saved in the browser's localStorage object
+	 * If the localStorageKey option is defined, the selection will be
 	 * <p>
 	 */
 	private Boolean showSelectionPalette;
@@ -381,7 +381,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 * <p>
 	 * Spectrum can keep track of what has been selected by the user with the showSelectionPalette option.
 	 * <p>
-	 * If the localStorageKey option is defined, the selection will be saved in the browser's localStorage object
+	 * If the localStorageKey option is defined, the selection will be
 	 * <p>
 	 *
 	 * @return
@@ -395,7 +395,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 * <p>
 	 * Spectrum can keep track of what has been selected by the user with the showSelectionPalette option.
 	 * <p>
-	 * If the localStorageKey option is defined, the selection will be saved in the browser's localStorage object
+	 * If the localStorageKey option is defined, the selection will be
 	 * <p>
 	 *
 	 * @param showSelectionPalette
