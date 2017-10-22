@@ -83,4 +83,37 @@ public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPicke
 		return picker;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQSpectrumColourPickerFeature))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQSpectrumColourPickerFeature that = (JQSpectrumColourPickerFeature) o;
+
+		if (getPicker() != null ? !getPicker().equals(that.getPicker()) : that.getPicker() != null)
+		{
+			return false;
+		}
+		return colourOptions != null ? colourOptions.equals(that.colourOptions) : that.colourOptions == null;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + (getPicker() != null ? getPicker().hashCode() : 0);
+		result = 31 * result + (colourOptions != null ? colourOptions.hashCode() : 0);
+		return result;
+	}
 }

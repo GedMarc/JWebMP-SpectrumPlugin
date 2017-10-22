@@ -24,13 +24,23 @@ import java.io.Serializable;
  */
 public class JQSpectrumColourPalettes implements Serializable
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private JQSpectrumColourPalette[] palettes;
-	
+
 	public JQSpectrumColourPalettes()
 	{
-	
+		//TODO
+	}
+
+	public JQSpectrumColourPalette[] getPalettes()
+	{
+		return palettes;
+	}
+
+	public void setPalettes(JQSpectrumColourPalette[] palettes)
+	{
+		this.palettes = palettes;
 	}
 }

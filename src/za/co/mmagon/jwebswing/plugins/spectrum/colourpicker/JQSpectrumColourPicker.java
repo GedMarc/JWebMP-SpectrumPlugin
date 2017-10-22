@@ -54,4 +54,33 @@ public class JQSpectrumColourPicker extends InputTextType
 	{
 		return feature.getOptions();
 	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (!(o instanceof JQSpectrumColourPicker))
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		JQSpectrumColourPicker that = (JQSpectrumColourPicker) o;
+
+		return feature != null ? feature.equals(that.feature) : that.feature == null;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + (feature != null ? feature.hashCode() : 0);
+		return result;
+	}
 }
