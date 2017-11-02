@@ -31,7 +31,7 @@ public class JQSpectrumColourPalettes implements Serializable
 
 	public JQSpectrumColourPalettes()
 	{
-		//TODO
+
 	}
 
 	public JQSpectrumColourPalette[] getPalettes()
