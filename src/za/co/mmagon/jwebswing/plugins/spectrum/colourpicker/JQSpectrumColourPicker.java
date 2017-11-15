@@ -79,8 +79,6 @@ public class JQSpectrumColourPicker extends InputTextType
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + (feature != null ? feature.hashCode() : 0);
-		return result;
+		return super.hashCode();
 	}
 }
