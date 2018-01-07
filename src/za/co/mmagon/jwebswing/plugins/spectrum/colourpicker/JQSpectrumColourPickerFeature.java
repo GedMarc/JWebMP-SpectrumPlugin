@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -18,6 +18,8 @@ package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
 
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.plugins.pools.jqspectrum.JQSpectrumColourPickerReferencePool;
+
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
  * An implementation of the Spectrum Colour Picker tool
@@ -52,7 +54,7 @@ public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPicke
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		String s = picker.getJQueryID() + "spectrum(" + getOptions() + ");" + getNewLine();
+		String s = picker.getJQueryID() + "spectrum(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine();
 		addQuery(s);
 	}
 
