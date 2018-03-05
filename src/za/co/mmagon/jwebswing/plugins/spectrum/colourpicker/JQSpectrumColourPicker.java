@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
  */
 package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
 
-import za.co.mmagon.jwebswing.base.html.InputTextType;
+import za.co.mmagon.jwebswing.base.html.inputs.InputTextType;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
@@ -28,8 +28,11 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @author GedMarc
  * @since 01 May 2015
  */
-@ComponentInformation(name = "Spectrum Colour Picker", description = "A full featured colour picker", url = "https://bgrins.github.io/spectrum/")
-public class JQSpectrumColourPicker extends InputTextType
+@ComponentInformation(name = "Spectrum Colour Picker",
+		description = "A full featured colour picker",
+		url = "https://bgrins.github.io/spectrum/")
+public class JQSpectrumColourPicker
+		extends InputTextType
 {
 
 	private static final long serialVersionUID = 1L;
