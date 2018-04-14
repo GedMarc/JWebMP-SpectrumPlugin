@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
+package com.jwebmp.plugins.spectrum.colourpicker;
 
-import za.co.mmagon.jwebswing.base.html.inputs.InputTextType;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
+import com.jwebmp.base.html.inputs.InputTextType;
+import com.jwebmp.plugins.ComponentInformation;
 
 /**
  * The Spectrum Colour Picker Implementation
@@ -59,6 +59,12 @@ public class JQSpectrumColourPicker
 	}
 
 	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
+	}
+
+	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -77,11 +83,5 @@ public class JQSpectrumColourPicker
 		JQSpectrumColourPicker that = (JQSpectrumColourPicker) o;
 
 		return feature != null ? feature.equals(that.feature) : that.feature == null;
-	}
-
-	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
 	}
 }

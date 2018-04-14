@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.pools.jqspectrum;
+package com.jwebmp.plugins.pools.jqspectrum;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.base.servlets.interfaces.ReferencePool;
 
 /**
  * The references for the JWColourPicker
@@ -27,7 +27,8 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  * @author GedMarc
  * @since 01 May 2015
  */
-public enum JQSpectrumColourPickerReferencePool implements ReferencePool
+public enum JQSpectrumColourPickerReferencePool
+		implements ReferencePool
 {
 
 	SpectrumColourPicker(new JQSpectrumColourPickerJavaScriptReference(), new JQSpectrumColourPickerCSSReference());
@@ -35,9 +36,21 @@ public enum JQSpectrumColourPickerReferencePool implements ReferencePool
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
 
-	private JQSpectrumColourPickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	JQSpectrumColourPickerReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
+		this.cssReference = cssReference;
+	}
+
+	@Override
+	public CSSReference getCssReference()
+	{
+		return cssReference;
+	}
+
+	@Override
+	public void setCssReference(CSSReference cssReference)
+	{
 		this.cssReference = cssReference;
 	}
 
@@ -51,17 +64,5 @@ public enum JQSpectrumColourPickerReferencePool implements ReferencePool
 	public void setJavaScriptReference(JavascriptReference javaScriptReference)
 	{
 		this.javaScriptReference = javaScriptReference;
-	}
-
-	@Override
-	public CSSReference getCssReference()
-	{
-		return cssReference;
-	}
-
-	@Override
-	public void setCssReference(CSSReference cssReference)
-	{
-		this.cssReference = cssReference;
 	}
 }

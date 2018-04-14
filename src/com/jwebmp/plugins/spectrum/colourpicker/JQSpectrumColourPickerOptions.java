@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,11 +14,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
+package com.jwebmp.plugins.spectrum.colourpicker;
 
-import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourNames;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
+import com.jwebmp.htmlbuilder.css.colours.ColourNames;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
 
 /**
  * The options granted by the spectrum plugin
@@ -29,7 +29,7 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptPartType;
  */
 public class JQSpectrumColourPickerOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.
@@ -67,7 +67,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 * enable spectrum if the input is disabled (see below).
 	 */
 	private Boolean disabled;
-	
+
 	private String localStorageKey;
 	/**
 	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
@@ -154,7 +154,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 * <p>
 	 */
 	private JQSpectrumColourPalette selectionPalette;
-	
+
 	/**
 	 * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.
 	 * <p>
@@ -167,7 +167,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return color;
 	}
-	
+
 	/**
 	 * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.
 	 * <p>
@@ -180,7 +180,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.color = color.getValue();
 	}
-	
+
 	/**
 	 * This means that it will always show up at full size, and be positioned as an inline-block element. Look to the left for a full sized flat picker.
 	 * <p>
@@ -191,7 +191,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return flat;
 	}
-	
+
 	/**
 	 * This means that it will always show up at full size, and be positioned as an inline-block element. Look to the left for a full sized flat picker.
 	 * <p>
@@ -202,7 +202,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.flat = flat;
 	}
-	
+
 	/**
 	 * You can add an input to allow free form typing. The color parsing is very permissive in the allowed strings. See TinyColor for more details.
 	 * <p>
@@ -213,7 +213,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showInput;
 	}
-	
+
 	/**
 	 * You can add an input to allow free form typing. The color parsing is very permissive in the allowed strings. See TinyColor for more details.
 	 * <p>
@@ -224,7 +224,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showInput = showInput;
 	}
-	
+
 	/**
 	 * Spectrum can show the color that was initially set when opening. This provides an easy way to click back to what was set when opened.
 	 * <p>
@@ -235,7 +235,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showInitial;
 	}
-	
+
 	/**
 	 * Spectrum can show the color that was initially set when opening. This provides an easy way to click back to what was set when opened.
 	 * <p>
@@ -246,7 +246,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showInitial = showInitial;
 	}
-	
+
 	/**
 	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input. Note: this is all
 	 * customizable via CSS.
@@ -258,7 +258,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return allowEmpty;
 	}
-	
+
 	/**
 	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input. Note: this is all
 	 * customizable via CSS.
@@ -270,7 +270,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.allowEmpty = allowEmpty;
 	}
-	
+
 	/**
 	 * You can allow alpha transparency selection. Check out these examples:
 	 * <p>
@@ -281,7 +281,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showAlpha;
 	}
-	
+
 	/**
 	 * You can allow alpha transparency selection. Check out these examples:
 	 * <p>
@@ -292,17 +292,17 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showAlpha = showAlpha;
 	}
-	
+
 	public String getLocalStorageKey()
 	{
 		return localStorageKey;
 	}
-	
+
 	public void setLocalStorageKey(String localStorageKey)
 	{
 		this.localStorageKey = localStorageKey;
 	}
-	
+
 	/**
 	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
 	 * added to the palette if it isn't there already. Check it out here:
@@ -314,7 +314,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showPalette;
 	}
-	
+
 	/**
 	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
 	 * added to the palette if it isn't there already. Check it out here:
@@ -326,7 +326,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showPalette = showPalette;
 	}
-	
+
 	/**
 	 * If you'd like, spectrum can show the palettes you specify, and nothing else.
 	 * <p>
@@ -337,7 +337,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showPaletteOnly;
 	}
-	
+
 	/**
 	 * If you'd like, spectrum can show the palettes you specify, and nothing else.
 	 * <p>
@@ -348,7 +348,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showPaletteOnly = showPaletteOnly;
 	}
-	
+
 	/**
 	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's
 	 * not in the palette. The default value for togglePaletteOnly is FALSE. Set it to TRUE to enable the Toggle button.
@@ -362,7 +362,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return togglePaletteOnly;
 	}
-	
+
 	/**
 	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's
 	 * not in the palette. The default value for togglePaletteOnly is FALSE. Set it to TRUE to enable the Toggle button.
@@ -376,7 +376,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.togglePaletteOnly = togglePaletteOnly;
 	}
-	
+
 	/**
 	 * <p>
 	 * Spectrum can keep track of what has been selected by the user with the showSelectionPalette option.
@@ -390,7 +390,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showSelectionPalette;
 	}
-	
+
 	/**
 	 * <p>
 	 * Spectrum can keep track of what has been selected by the user with the showSelectionPalette option.
@@ -404,7 +404,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showSelectionPalette = showSelectionPalette;
 	}
-	
+
 	/**
 	 * When clicking outside of the colorpicker, you can force it to fire a change event rather than having it revert the change. This is true by default.
 	 * <p>
@@ -415,7 +415,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return clickoutFiresChange;
 	}
-	
+
 	/**
 	 * When clicking outside of the colorpicker, you can force it to fire a change event rather than having it revert the change. This is true by default.
 	 * <p>
@@ -426,7 +426,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.clickoutFiresChange = clickoutFiresChange;
 	}
-	
+
 	/**
 	 * You can set the button's text using cancelText and chooseText properties.
 	 * <p>
@@ -437,7 +437,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return cancelText;
 	}
-	
+
 	/**
 	 * You can set the button's text using cancelText and chooseText properties.
 	 * <p>
@@ -448,7 +448,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.cancelText = cancelText;
 	}
-	
+
 	/**
 	 * You can set the button's text using cancelText and chooseText properties.
 	 * <p>
@@ -459,7 +459,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return chooseText;
 	}
-	
+
 	/**
 	 * You can set the button's text using cancelText and chooseText properties.
 	 * <p>
@@ -470,7 +470,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.chooseText = chooseText;
 	}
-	
+
 	/**
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
 	 * <p>
@@ -481,7 +481,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return togglePaletteMoreText;
 	}
-	
+
 	/**
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
 	 * <p>
@@ -492,7 +492,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.togglePaletteMoreText = togglePaletteMoreText;
 	}
-	
+
 	/**
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
 	 * <p>
@@ -503,7 +503,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return togglePaletteLessText;
 	}
-	
+
 	/**
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
 	 * <p>
@@ -514,7 +514,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.togglePaletteLessText = togglePaletteLessText;
 	}
-	
+
 	/**
 	 * You can add an additional class name to the just the container element using the containerClassName property.
 	 * <p>
@@ -525,7 +525,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return containerClassName;
 	}
-	
+
 	/**
 	 * You can add an additional class name to the just the container element using the containerClassName property.
 	 * <p>
@@ -536,7 +536,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.containerClassName = containerClassName;
 	}
-	
+
 	/**
 	 * You can add an additional class name to just the replacer element using the replacerClassName property.
 	 * <p>
@@ -547,7 +547,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return replacerClassName;
 	}
-	
+
 	/**
 	 * You can add an additional class name to just the replacer element using the replacerClassName property.
 	 * <p>
@@ -558,7 +558,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.replacerClassName = replacerClassName;
 	}
-	
+
 	/**
 	 * <p>
 	 * You can set the format that is displayed in the text box.
@@ -570,7 +570,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return preferredFormat;
 	}
-	
+
 	/**
 	 * <p>
 	 * You can set the format that is displayed in the text box.
@@ -582,7 +582,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.preferredFormat = preferredFormat;
 	}
-	
+
 	/**
 	 * <p>
 	 * This is how many elements are allowed in the selectionPallete at once.
@@ -596,7 +596,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return maxSelectionSize;
 	}
-	
+
 	/**
 	 * <p>
 	 * This is how many elements are allowed in the selectionPallete at once.
@@ -610,17 +610,17 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.maxSelectionSize = maxSelectionSize;
 	}
-	
+
 	public JQSpectrumColourPalettes getPalette()
 	{
 		return palette;
 	}
-	
+
 	public void setPalette(JQSpectrumColourPalettes palette)
 	{
 		this.palette = palette;
 	}
-	
+
 	/**
 	 * <p>
 	 * The default values inside of the selection palette. Make sure that showSelectionPalette and showPalette are both enabled.
@@ -634,7 +634,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return selectionPalette;
 	}
-	
+
 	/**
 	 * <p>
 	 * The default values inside of the selection palette. Make sure that showSelectionPalette and showPalette are both enabled.
@@ -648,7 +648,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.selectionPalette = selectionPalette;
 	}
-	
+
 	/**
 	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default value. Note: you cannot
 	 * enable spectrum if the input is disabled (see below).
@@ -659,7 +659,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default value. Note: you cannot
 	 * enable spectrum if the input is disabled (see below).
@@ -670,7 +670,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.disabled = disabled;
 	}
-	
+
 	/**
 	 * You can have the colorpicker automatically hide after a palette color is selected.
 	 */
@@ -678,7 +678,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return hideAfterPaletteSelect;
 	}
-	
+
 	/**
 	 * You can have the colorpicker automatically hide after a palette color is selected.
 	 */
@@ -686,7 +686,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.hideAfterPaletteSelect = hideAfterPaletteSelect;
 	}
-	
+
 	/**
 	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is
 	 * closed.
@@ -698,7 +698,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		return showButtons;
 	}
-	
+
 	/**
 	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is
 	 * closed.
@@ -710,7 +710,7 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	{
 		this.showButtons = showButtons;
 	}
-	
+
 	@Override
 	public JavascriptPartType getJavascriptType()
 	{

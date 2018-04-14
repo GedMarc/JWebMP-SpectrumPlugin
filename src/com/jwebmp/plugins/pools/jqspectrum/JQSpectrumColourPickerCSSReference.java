@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.pools.jqspectrum;
+package com.jwebmp.plugins.pools.jqspectrum;
 
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
+import com.jwebmp.base.references.CSSReference;
 
 /**
  * @author GedMarc
@@ -25,7 +25,7 @@ import za.co.mmagon.jwebswing.base.references.JavascriptReference;
  * <p>
  * @since Mar 8, 2015
  */
-class JQSpectrumColourPickerJavaScriptReference extends JavascriptReference
+class JQSpectrumColourPickerCSSReference extends CSSReference
 {
 
 	private static final long serialVersionUID = 1L;
@@ -33,8 +33,8 @@ class JQSpectrumColourPickerJavaScriptReference extends JavascriptReference
 	/**
 	 *
 	 */
-	public JQSpectrumColourPickerJavaScriptReference()
+	public JQSpectrumColourPickerCSSReference()
 	{
-		super("JWColourPickerJS", 1.113, "bower_components/spectrum/spectrum.js", "bower_components/spectrum/spectrum.js");
+		super("JWColourPickerCSS", 1.113, "bower_components/spectrum/spectrum.css", "bower_components/spectrum/spectrum.css");
 	}
 }

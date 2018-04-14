@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
+package com.jwebmp.plugins.spectrum.colourpicker;
 
 import java.io.Serializable;
 
@@ -22,23 +22,25 @@ import java.io.Serializable;
  * @author GedMarc
  * @since 02 May 2015
  */
-public class JQSpectrumColourPalette implements Serializable
+public class JQSpectrumColourPalettes implements Serializable
 {
 
-	private String color;
+	private static final long serialVersionUID = 1L;
 
-	public JQSpectrumColourPalette()
+	private JQSpectrumColourPalette[] palettes;
+
+	public JQSpectrumColourPalettes()
 	{
 		//Nothing needed
 	}
 
-	public String getColor()
+	public JQSpectrumColourPalette[] getPalettes()
 	{
-		return color;
+		return palettes;
 	}
 
-	public void setColor(String color)
+	public void setPalettes(JQSpectrumColourPalette[] palettes)
 	{
-		this.color = color;
+		this.palettes = palettes;
 	}
 }

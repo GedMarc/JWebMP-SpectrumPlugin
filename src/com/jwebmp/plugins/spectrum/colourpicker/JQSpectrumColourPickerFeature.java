@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
+package com.jwebmp.plugins.spectrum.colourpicker;
 
-import za.co.mmagon.jwebswing.Feature;
-import za.co.mmagon.jwebswing.plugins.pools.jqspectrum.JQSpectrumColourPickerReferencePool;
+import com.jwebmp.Feature;
+import com.jwebmp.plugins.pools.jqspectrum.JQSpectrumColourPickerReferencePool;
 
-import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+import static com.jwebmp.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
  * An implementation of the Spectrum Colour Picker tool
@@ -32,7 +32,8 @@ import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRAC
  * @version 1.0
  * @since 25 Jun 2013
  */
-public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
+public class JQSpectrumColourPickerFeature
+		extends Feature<JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -52,37 +53,12 @@ public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPicke
 	}
 
 	@Override
-	public void assignFunctionsToComponent()
+	public int hashCode()
 	{
-		String s = picker.getJQueryID() + "spectrum(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine();
-		addQuery(s);
-	}
-
-	/**
-	 * Returns the options associated with the Spectrum Colour Picker
-	 * <p>
-	 *
-	 * @return
-	 */
-	@Override
-	public JQSpectrumColourPickerOptions getOptions()
-	{
-		if (this.colourOptions == null)
-		{
-			colourOptions = new JQSpectrumColourPickerOptions();
-		}
-		return colourOptions;
-	}
-
-	/**
-	 * Returns the JQUIColourPicker associated with this feature
-	 * <p>
-	 *
-	 * @return
-	 */
-	public JQSpectrumColourPicker getPicker()
-	{
-		return picker;
+		int result = super.hashCode();
+		result = 31 * result + (getPicker() != null ? getPicker().hashCode() : 0);
+		result = 31 * result + (colourOptions != null ? colourOptions.hashCode() : 0);
+		return result;
 	}
 
 	@Override
@@ -110,12 +86,37 @@ public class JQSpectrumColourPickerFeature extends Feature<JQSpectrumColourPicke
 		return colourOptions != null ? colourOptions.equals(that.colourOptions) : that.colourOptions == null;
 	}
 
+	/**
+	 * Returns the options associated with the Spectrum Colour Picker
+	 * <p>
+	 *
+	 * @return
+	 */
 	@Override
-	public int hashCode()
+	public JQSpectrumColourPickerOptions getOptions()
 	{
-		int result = super.hashCode();
-		result = 31 * result + (getPicker() != null ? getPicker().hashCode() : 0);
-		result = 31 * result + (colourOptions != null ? colourOptions.hashCode() : 0);
-		return result;
+		if (colourOptions == null)
+		{
+			colourOptions = new JQSpectrumColourPickerOptions();
+		}
+		return colourOptions;
+	}
+
+	@Override
+	public void assignFunctionsToComponent()
+	{
+		String s = picker.getJQueryID() + "spectrum(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine();
+		addQuery(s);
+	}
+
+	/**
+	 * Returns the JQUIColourPicker associated with this feature
+	 * <p>
+	 *
+	 * @return
+	 */
+	public JQSpectrumColourPicker getPicker()
+	{
+		return picker;
 	}
 }

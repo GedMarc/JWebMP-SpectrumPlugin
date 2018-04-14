@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,18 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.spectrum.colourpicker;
+package com.jwebmp.plugins.pools.jqspectrum;
+
+import com.jwebmp.base.references.JavascriptReference;
 
 /**
  * @author GedMarc
- * @since 02 May 2015
+ * @version 1.0
+ * <p>
+ * <p>
+ * @since Mar 8, 2015
  */
-public enum JQSpectrumaletteFormats
+class JQSpectrumColourPickerJavaScriptReference extends JavascriptReference
 {
-	
-	Hex,
-	Hex3,
-	HSL,
-	RGB,
-	Name
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 *
+	 */
+	public JQSpectrumColourPickerJavaScriptReference()
+	{
+		super("JWColourPickerJS", 1.113, "bower_components/spectrum/spectrum.js", "bower_components/spectrum/spectrum.js");
+	}
 }
