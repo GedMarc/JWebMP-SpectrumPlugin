@@ -16,29 +16,26 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import java.io.Serializable;
+import com.jwebmp.base.references.JavascriptReference;
 
 /**
  * @author GedMarc
- * @since 02 May 2015
+ * @version 1.0
+ * 		<p>
+ * 		<p>
+ * @since Mar 8, 2015
  */
-public class JQSpectrumColourPalette implements Serializable
+class JQSpectrumColourPickerJavaScriptReference
+		extends JavascriptReference
 {
 
-	private String color;
+	private static final long serialVersionUID = 1L;
 
-	public JQSpectrumColourPalette()
+	/**
+	 *
+	 */
+	public JQSpectrumColourPickerJavaScriptReference()
 	{
-		//Nothing needed
-	}
-
-	public String getColor()
-	{
-		return color;
-	}
-
-	public void setColor(String color)
-	{
-		this.color = color;
+		super("JWColourPickerJS", 1.113, "bower_components/spectrum/spectrum.js", "bower_components/spectrum/spectrum.js");
 	}
 }

@@ -17,9 +17,8 @@
 package com.jwebmp.plugins.spectrum.colourpicker;
 
 import com.jwebmp.Feature;
-import com.jwebmp.plugins.pools.jqspectrum.JQSpectrumColourPickerReferencePool;
 
-import static com.jwebmp.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+import static com.jwebmp.utilities.StaticStrings.*;
 
 /**
  * An implementation of the Spectrum Colour Picker tool

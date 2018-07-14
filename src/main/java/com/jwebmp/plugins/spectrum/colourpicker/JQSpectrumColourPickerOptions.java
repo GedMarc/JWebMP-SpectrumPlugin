@@ -27,7 +27,8 @@ import com.jwebmp.htmlbuilder.javascript.JavascriptPartType;
  * @author GedMarc
  * @since 2015/05/02
  */
-public class JQSpectrumColourPickerOptions extends JavaScriptPart
+public class JQSpectrumColourPickerOptions
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
@@ -50,7 +51,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 */
 	private Boolean showInitial;
 	/**
-	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input. Note: this is all
+	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input.
+	 * Note: this is all
 	 * customizable via CSS.
 	 */
 	private Boolean allowEmpty;
@@ -63,14 +65,16 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 */
 	private Boolean hideAfterPaletteSelect;
 	/**
-	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default value. Note: you cannot
+	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default
+	 * value. Note: you cannot
 	 * enable spectrum if the input is disabled (see below).
 	 */
 	private Boolean disabled;
 
 	private String localStorageKey;
 	/**
-	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
+	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the
+	 * current color will be
 	 * added to the palette if it isn't there already. Check it out here:
 	 */
 	private Boolean showPalette;
@@ -79,14 +83,16 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	 */
 	private Boolean showPaletteOnly;
 	/**
-	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's
+	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to
+	 * pick a color that's
 	 * not in the palette. The default value for togglePaletteOnly is FALSE. Set it to TRUE to enable the Toggle button.
 	 * <p>
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
 	 */
 	private Boolean togglePaletteOnly;
 	/**
-	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is
+	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input)
+	 * when the picker is
 	 * closed.
 	 */
 	private Boolean showButtons;
@@ -248,7 +254,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input. Note: this is all
+	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input.
+	 * Note: this is all
 	 * customizable via CSS.
 	 * <p>
 	 *
@@ -260,7 +267,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input. Note: this is all
+	 * If you specify both the showInput, showInitial, and allowEmpty options, the CSS keeps things in order by wrapping the buttons to the bottom row, and shrinking the input.
+	 * Note: this is all
 	 * customizable via CSS.
 	 * <p>
 	 *
@@ -304,7 +312,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
+	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the
+	 * current color will be
 	 * added to the palette if it isn't there already. Check it out here:
 	 * <p>
 	 *
@@ -316,7 +325,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the current color will be
+	 * Spectrum can show a palette below the colorpicker to make it convenient for users to choose from frequently or recently used colors. When the colorpicker is closed, the
+	 * current color will be
 	 * added to the palette if it isn't there already. Check it out here:
 	 * <p>
 	 *
@@ -350,7 +360,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's
+	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to
+	 * pick a color that's
 	 * not in the palette. The default value for togglePaletteOnly is FALSE. Set it to TRUE to enable the Toggle button.
 	 * <p>
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
@@ -364,7 +375,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to pick a color that's
+	 * Spectrum can show a button to toggle the colorpicker next to the palette. This way, the user can choose from a limited number of colors in the palette, but still be able to
+	 * pick a color that's
 	 * not in the palette. The default value for togglePaletteOnly is FALSE. Set it to TRUE to enable the Toggle button.
 	 * <p>
 	 * You can also change the text on the Toggle Button with the options togglePaletteMoreText (default is "more") and togglePaletteLessText (default is "less").
@@ -650,7 +662,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default value. Note: you cannot
+	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default
+	 * value. Note: you cannot
 	 * enable spectrum if the input is disabled (see below).
 	 *
 	 * @return
@@ -661,7 +674,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default value. Note: you cannot
+	 * Spectrum can be automatically disabled if you pass in the disabled flag. Additionally, if the input that you initialize spectrum on is disabled, this will be the default
+	 * value. Note: you cannot
 	 * enable spectrum if the input is disabled (see below).
 	 *
 	 * @param disabled
@@ -688,7 +702,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is
+	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input)
+	 * when the picker is
 	 * closed.
 	 * <p>
 	 *
@@ -700,7 +715,8 @@ public class JQSpectrumColourPickerOptions extends JavaScriptPart
 	}
 
 	/**
-	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input) when the picker is
+	 * You can show or hide the buttons using the showButtons property. If there are no buttons, the behavior will be to fire the `change` event (and update the original input)
+	 * when the picker is
 	 * closed.
 	 * <p>
 	 *

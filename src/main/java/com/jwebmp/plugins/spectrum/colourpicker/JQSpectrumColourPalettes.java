@@ -22,7 +22,8 @@ import java.io.Serializable;
  * @author GedMarc
  * @since 02 May 2015
  */
-public class JQSpectrumColourPalettes implements Serializable
+public class JQSpectrumColourPalettes
+		implements Serializable
 {
 
 	private static final long serialVersionUID = 1L;

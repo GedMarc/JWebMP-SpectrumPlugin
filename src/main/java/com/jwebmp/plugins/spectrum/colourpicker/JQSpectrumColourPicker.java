@@ -59,12 +59,6 @@ public class JQSpectrumColourPicker
 	}
 
 	@Override
-	public int hashCode()
-	{
-		return super.hashCode();
-	}
-
-	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -83,5 +77,11 @@ public class JQSpectrumColourPicker
 		JQSpectrumColourPicker that = (JQSpectrumColourPicker) o;
 
 		return feature != null ? feature.equals(that.feature) : that.feature == null;
+	}
+
+	@Override
+	public int hashCode()
+	{
+		return super.hashCode();
 	}
 }

@@ -14,27 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.pools.jqspectrum;
+package com.jwebmp.plugins.spectrum.colourpicker;
 
-import com.jwebmp.base.references.CSSReference;
+import java.io.Serializable;
 
 /**
  * @author GedMarc
- * @version 1.0
- * <p>
- * <p>
- * @since Mar 8, 2015
+ * @since 02 May 2015
  */
-class JQSpectrumColourPickerCSSReference extends CSSReference
+public class JQSpectrumColourPalette
+		implements Serializable
 {
 
-	private static final long serialVersionUID = 1L;
+	private String color;
 
-	/**
-	 *
-	 */
-	public JQSpectrumColourPickerCSSReference()
+	public JQSpectrumColourPalette()
 	{
-		super("JWColourPickerCSS", 1.113, "bower_components/spectrum/spectrum.css", "bower_components/spectrum/spectrum.css");
+		//Nothing needed
+	}
+
+	public String getColor()
+	{
+		return color;
+	}
+
+	public void setColor(String color)
+	{
+		this.color = color;
 	}
 }
