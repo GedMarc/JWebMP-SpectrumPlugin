@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import com.jwebmp.base.html.inputs.InputTextType;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.inputs.InputTextType;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * The Spectrum Colour Picker Implementation

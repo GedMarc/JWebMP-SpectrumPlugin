@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.core.base.references.CSSReference;
 
 /**
  * @author GedMarc

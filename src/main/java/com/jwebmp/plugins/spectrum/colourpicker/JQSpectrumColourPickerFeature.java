@@ -16,9 +16,9 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import com.jwebmp.Feature;
+import com.jwebmp.core.Feature;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * An implementation of the Spectrum Colour Picker tool
