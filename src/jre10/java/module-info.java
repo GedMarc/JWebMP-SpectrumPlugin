@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.spectrum.colourpicker.JQSpectrumPageConfigurator;
+
 module com.jwebmp.plugins.spectrum.colourpicker {
 
 	exports com.jwebmp.plugins.spectrum.colourpicker;
@@ -8,4 +11,7 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 
 	requires java.validation;
 	requires java.logging;
+
+	provides IPageConfigurator with JQSpectrumPageConfigurator;
+
 }

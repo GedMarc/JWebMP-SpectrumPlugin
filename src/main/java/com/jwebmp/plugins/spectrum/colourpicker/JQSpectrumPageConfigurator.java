@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.spectrum.colourpicker;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author GedMarc
@@ -39,11 +39,8 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginIconImageUrl = "bower_components/spectrum/example.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQSpectrumPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	@Override
 	public Page configure(Page page)
 	{
