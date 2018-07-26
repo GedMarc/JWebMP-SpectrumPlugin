@@ -13,5 +13,5 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 	requires java.logging;
 
 	provides IPageConfigurator with JQSpectrumPageConfigurator;
-
+	opens com.jwebmp.plugins.spectrum.colourpicker to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
