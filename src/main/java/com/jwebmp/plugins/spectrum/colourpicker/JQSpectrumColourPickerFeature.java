@@ -32,7 +32,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 25 Jun 2013
  */
 public class JQSpectrumColourPickerFeature
-		extends Feature<JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
+		extends Feature<JQSpectrumColourPickerFeature, JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -54,35 +54,13 @@ public class JQSpectrumColourPickerFeature
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + (getPicker() != null ? getPicker().hashCode() : 0);
-		result = 31 * result + (colourOptions != null ? colourOptions.hashCode() : 0);
-		return result;
+		return super.hashCode();
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public boolean equals(Object obj)
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof JQSpectrumColourPickerFeature))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQSpectrumColourPickerFeature that = (JQSpectrumColourPickerFeature) o;
-
-		if (getPicker() != null ? !getPicker().equals(that.getPicker()) : that.getPicker() != null)
-		{
-			return false;
-		}
-		return colourOptions != null ? colourOptions.equals(that.colourOptions) : that.colourOptions == null;
+		return super.equals(obj);
 	}
 
 	/**
