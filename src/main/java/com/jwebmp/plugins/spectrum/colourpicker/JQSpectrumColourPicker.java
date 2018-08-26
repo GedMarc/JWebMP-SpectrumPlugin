@@ -31,11 +31,17 @@ import com.jwebmp.core.plugins.ComponentInformation;
 @ComponentInformation(name = "Spectrum Colour Picker",
 		description = "A full featured colour picker",
 		url = "https://bgrins.github.io/spectrum/")
-public class JQSpectrumColourPicker
-		extends InputTextType
+public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
+		extends InputTextType<J>
 {
 
+	/**
+	 * Field serialVersionUID
+	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 * The actual feature
+	 */
 	private final JQSpectrumColourPickerFeature feature;
 
 	/**
@@ -48,9 +54,11 @@ public class JQSpectrumColourPicker
 	}
 
 	/**
-	 * Returns the features available options
+	 * Returns any client side options available with this component
 	 *
-	 * @return
+	 * @return Returns null currently
+	 *
+	 * @see com.jwebmp.core.base.interfaces.IComponentFeatureBase#getOptions()
 	 */
 	@Override
 	public JQSpectrumColourPickerOptions getOptions()
@@ -59,29 +67,14 @@ public class JQSpectrumColourPicker
 	}
 
 	@Override
-	public boolean equals(Object o)
-	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (!(o instanceof JQSpectrumColourPicker))
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		JQSpectrumColourPicker that = (JQSpectrumColourPicker) o;
-
-		return feature != null ? feature.equals(that.feature) : that.feature == null;
-	}
-
-	@Override
 	public int hashCode()
 	{
 		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		return super.equals(o);
 	}
 }
