@@ -43,11 +43,47 @@ import javax.validation.constraints.NotNull;
 public class JQSpectrumPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return JQSpectrumPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		JQSpectrumPageConfigurator.enabled = mustEnable;
+	}
+
 	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return JQSpectrumPageConfigurator.enabled;
 	}
 
 }
