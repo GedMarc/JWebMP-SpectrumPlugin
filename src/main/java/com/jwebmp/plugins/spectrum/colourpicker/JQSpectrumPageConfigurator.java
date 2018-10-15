@@ -33,15 +33,15 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "ui, web, colour picker, spectrum, drop down",
 		pluginSubtitle = "A straight forward and simple colour picker with a wide range of options and tools ",
 		pluginGitUrl = "http://github.com/bgrins/spectrum",
-		pluginSourceUrl = "https://github.com/GedMarc/JWebSwing-SpectrumPlugin",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-SpectrumPlugin/wiki",
+		pluginSourceUrl = "https://github.com/GedMarc/JWebMP-SpectrumPlugin",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-SpectrumPlugin/wiki",
 		pluginOriginalHomepage = "https://bgrins.github.io/spectrum/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/SpectrumPlugin.jar/download",
 		pluginIconUrl = "bower_components/spectrum/icon.png",
 		pluginIconImageUrl = "bower_components/spectrum/example.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQSpectrumPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<JQSpectrumPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
