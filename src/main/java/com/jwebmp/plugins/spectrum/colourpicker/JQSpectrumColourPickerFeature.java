@@ -35,7 +35,7 @@ public class JQSpectrumColourPickerFeature
 		extends Feature<JQSpectrumColourPickerFeature, JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	private final JQSpectrumColourPicker picker;
 	private JQSpectrumColourPickerOptions colourOptions;
 

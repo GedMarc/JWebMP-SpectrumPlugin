@@ -31,7 +31,7 @@ public class JQSpectrumColourPickerOptions
 		extends JavaScriptPart
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.
 	 * <p>

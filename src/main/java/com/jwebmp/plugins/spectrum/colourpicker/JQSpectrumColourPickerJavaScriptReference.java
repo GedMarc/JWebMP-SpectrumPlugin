@@ -29,7 +29,6 @@ class JQSpectrumColourPickerJavaScriptReference
 		extends JavascriptReference
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 *

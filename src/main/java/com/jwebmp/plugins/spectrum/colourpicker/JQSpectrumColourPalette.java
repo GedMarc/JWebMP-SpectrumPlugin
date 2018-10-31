@@ -16,14 +16,12 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import java.io.Serializable;
-
 /**
  * @author GedMarc
  * @since 02 May 2015
  */
 public class JQSpectrumColourPalette
-		implements Serializable
+
 {
 
 	private String color;
