@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.spectrum.colourpicker.JQSpectrumPageConfigurator;
-import com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
-
 module com.jwebmp.plugins.spectrum.colourpicker {
 
 	exports com.jwebmp.plugins.spectrum.colourpicker;
@@ -16,9 +10,9 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with JQSpectrumPageConfigurator;
-	provides IGuiceScanJarExclusions with SpectrumExclusionsModule;
-	provides IGuiceScanModuleExclusions with SpectrumExclusionsModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.spectrum.colourpicker.JQSpectrumPageConfigurator;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
 
 	opens com.jwebmp.plugins.spectrum.colourpicker to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
