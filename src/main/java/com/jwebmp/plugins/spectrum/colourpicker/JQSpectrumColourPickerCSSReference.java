@@ -25,11 +25,9 @@ import com.jwebmp.core.base.references.CSSReference;
  * 		<p>
  * @since Mar 8, 2015
  */
-class JQSpectrumColourPickerCSSReference
+public class JQSpectrumColourPickerCSSReference
 		extends CSSReference
 {
-
-
 	/**
 	 *
 	 */

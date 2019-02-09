@@ -34,8 +34,6 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 public class JQSpectrumColourPickerFeature
 		extends Feature<JQSpectrumColourPickerFeature, JQSpectrumColourPickerOptions, JQSpectrumColourPickerFeature>
 {
-
-
 	private final JQSpectrumColourPicker picker;
 	private JQSpectrumColourPickerOptions colourOptions;
 
@@ -48,7 +46,6 @@ public class JQSpectrumColourPickerFeature
 		this.picker = picker;
 		getJavascriptReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getJavaScriptReference());
 		getCssReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getCssReference());
-
 	}
 
 	@Override

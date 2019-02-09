@@ -16,15 +16,15 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+
 /**
  * @author GedMarc
  * @since 02 May 2015
  */
 public class JQSpectrumColourPalettes
-
+		extends JavaScriptPart<JQSpectrumColourPalettes>
 {
-
-
 	private JQSpectrumColourPalette[] palettes;
 
 	public JQSpectrumColourPalettes()

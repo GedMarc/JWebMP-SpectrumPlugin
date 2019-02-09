@@ -34,11 +34,6 @@ import com.jwebmp.core.plugins.ComponentInformation;
 public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 		extends InputTextType<J>
 {
-
-	/**
-	 * Field serialVersionUID
-	 */
-
 	/**
 	 * The actual feature
 	 */

@@ -25,11 +25,9 @@ import com.jwebmp.core.base.references.JavascriptReference;
  * 		<p>
  * @since Mar 8, 2015
  */
-class JQSpectrumColourPickerJavaScriptReference
+public class JQSpectrumColourPickerJavaScriptReference
 		extends JavascriptReference
 {
-
-
 	/**
 	 *
 	 */
