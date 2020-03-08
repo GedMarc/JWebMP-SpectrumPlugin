@@ -11,7 +11,6 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 	requires com.guicedee.guicedinjection;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.spectrum.colourpicker.JQSpectrumPageConfigurator;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
 
 	opens com.jwebmp.plugins.spectrum.colourpicker to com.fasterxml.jackson.databind, com.jwebmp.core;
