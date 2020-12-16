@@ -28,7 +28,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
  * @since 2015/05/02
  */
 public class JQSpectrumColourPickerOptions
-		extends JavaScriptPart
+		extends JavaScriptPart<JQSpectrumColourPickerOptions>
 {
 	/**
 	 * The initial color will be set with the color option. If you don't pass in a color, Spectrum will use the value attribute on the input.

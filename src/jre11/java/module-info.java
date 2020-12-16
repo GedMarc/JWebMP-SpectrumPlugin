@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumInclusionsModule;
+
 module com.jwebmp.plugins.spectrum.colourpicker {
 
 	exports com.jwebmp.plugins.spectrum.colourpicker;
@@ -11,6 +13,7 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.spectrum.colourpicker.JQSpectrumPageConfigurator;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.spectrum.colourpicker.implementations.SpectrumExclusionsModule;
-
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with SpectrumInclusionsModule;
+	
 	opens com.jwebmp.plugins.spectrum.colourpicker to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

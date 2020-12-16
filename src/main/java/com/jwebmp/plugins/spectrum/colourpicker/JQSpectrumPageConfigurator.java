@@ -18,6 +18,7 @@ package com.jwebmp.plugins.spectrum.colourpicker;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -36,10 +37,15 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://github.com/GedMarc/JWebMP-SpectrumPlugin",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-SpectrumPlugin/wiki",
 		pluginOriginalHomepage = "https://bgrins.github.io/spectrum/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/SpectrumPlugin.jar/download",
-		pluginIconUrl = "bower_components/spectrum/icon.png",
-		pluginIconImageUrl = "bower_components/spectrum/example.png",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.jquery/jwebmp-spectrum-colour-picker",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginGroupId = "com.jwebmp.plugins.jquery",
+		pluginArtifactId = "jwebmp-spectrum-colour-picker",
+		pluginModuleName = "com.jwebmp.plugins.spectrum.colourpicker",
+		pluginStatus = PluginStatus.Released
+)
 public class JQSpectrumPageConfigurator
 		implements IPageConfigurator<JQSpectrumPageConfigurator>
 {
