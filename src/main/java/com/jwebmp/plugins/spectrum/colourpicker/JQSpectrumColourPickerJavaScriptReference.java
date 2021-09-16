@@ -33,6 +33,6 @@ public class JQSpectrumColourPickerJavaScriptReference
 	 */
 	public JQSpectrumColourPickerJavaScriptReference()
 	{
-		super("JWColourPickerJS", 1.113, "bower_components/spectrum/spectrum.js", "bower_components/spectrum/spectrum.js");
+		super("JWColourPickerJS", 1.113, "spectrum-colorpicker2/spectrum.min.js");
 	}
 }

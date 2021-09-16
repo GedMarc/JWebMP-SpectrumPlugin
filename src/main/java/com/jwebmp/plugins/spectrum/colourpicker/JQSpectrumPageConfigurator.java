@@ -83,6 +83,10 @@ public class JQSpectrumPageConfigurator
 	@Override
 	 public Page<?> configure(Page<?> page)
 	{
+		page.getBody()
+		    .addJavaScriptReference(new JQSpectrumColourPickerJavaScriptReference());
+		page.getBody()
+		    .addCssReference(new JQSpectrumColourPickerCSSReference());
 		return page;
 	}
 

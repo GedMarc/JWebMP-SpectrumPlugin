@@ -21,8 +21,8 @@ import com.jwebmp.core.base.references.CSSReference;
 /**
  * @author GedMarc
  * @version 1.0
- * 		<p>
- * 		<p>
+ * <p>
+ * <p>
  * @since Mar 8, 2015
  */
 public class JQSpectrumColourPickerCSSReference
@@ -33,6 +33,6 @@ public class JQSpectrumColourPickerCSSReference
 	 */
 	public JQSpectrumColourPickerCSSReference()
 	{
-		super("JWColourPickerCSS", 1.113, "bower_components/spectrum/spectrum.css", "bower_components/spectrum/spectrum.css");
+		super("JWColourPickerCSS", 1.113, "spectrum-colorpicker2/spectrum.min.css");
 	}
 }

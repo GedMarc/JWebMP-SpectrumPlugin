@@ -1,5 +1,5 @@
 {
-  "name": "JQueryUIPlugin",
+  "name": "JWebMPSpectrumColorPicker",
   "authors": [
     "Marc Magon <ged_marc@hotmail.com>"
   ],
@@ -15,8 +15,5 @@
     "jar-resources/META-INF/resources/bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "spectrum": "^1.8.0"
-  }
+  ]
 }
