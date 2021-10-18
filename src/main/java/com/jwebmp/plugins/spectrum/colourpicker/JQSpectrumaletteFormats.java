@@ -16,16 +16,39 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
+import com.fasterxml.jackson.annotation.*;
+
 /**
  * @author GedMarc
  * @since 02 May 2015
  */
 public enum JQSpectrumaletteFormats
 {
-
+	
 	Hex,
 	Hex3,
 	HSL,
 	RGB,
-	Name
+	Name;
+	
+	public static JQSpectrumaletteFormats from(String value)
+	{
+		for (JQSpectrumaletteFormats jqSpectrumaletteFormats : values())
+		{
+			if (jqSpectrumaletteFormats.toString()
+			                           .equalsIgnoreCase(value))
+			{
+				return jqSpectrumaletteFormats;
+			}
+		}
+		return Hex;
+	}
+	
+	@Override
+	@JsonValue
+	public String toString()
+	{
+		return super.toString()
+		            .toLowerCase();
+	}
 }
