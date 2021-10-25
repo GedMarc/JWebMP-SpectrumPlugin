@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.*;
  * @author GedMarc
  * @since 02 May 2015
  */
-public enum JQSpectrumaletteFormats
+public enum JQSpectrumPaletteFormats
 {
 	
 	Hex,
@@ -31,9 +31,9 @@ public enum JQSpectrumaletteFormats
 	RGB,
 	Name;
 	
-	public static JQSpectrumaletteFormats from(String value)
+	public static JQSpectrumPaletteFormats from(String value)
 	{
-		for (JQSpectrumaletteFormats jqSpectrumaletteFormats : values())
+		for (JQSpectrumPaletteFormats jqSpectrumaletteFormats : values())
 		{
 			if (jqSpectrumaletteFormats.toString()
 			                           .equalsIgnoreCase(value))

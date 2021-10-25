@@ -27,6 +27,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavascriptPartType;
  * @author GedMarc
  * @since 2015/05/02
  */
+@SuppressWarnings({"JavaDoc", "unused"})
 public class JQSpectrumColourPickerOptions
 		extends JavaScriptPart<JQSpectrumColourPickerOptions>
 {
@@ -137,7 +138,7 @@ public class JQSpectrumColourPickerOptions
 	 * This will also change the format that is displayed in the titles from the palette swatches.
 	 * <p>
 	 */
-	private JQSpectrumaletteFormats preferredFormat;
+	private JQSpectrumPaletteFormats preferredFormat;
 	/**
 	 * <p>
 	 * This is how many elements are allowed in the selectionPallete at once.
@@ -576,7 +577,7 @@ public class JQSpectrumColourPickerOptions
 	 * This will also change the format that is displayed in the titles from the palette swatches.
 	 * <p>
 	 */
-	public JQSpectrumaletteFormats getPreferredFormat()
+	public JQSpectrumPaletteFormats getPreferredFormat()
 	{
 		return preferredFormat;
 	}
@@ -588,7 +589,7 @@ public class JQSpectrumColourPickerOptions
 	 * This will also change the format that is displayed in the titles from the palette swatches.
 	 * <p>
 	 */
-	public void setPreferredFormat(JQSpectrumaletteFormats preferredFormat)
+	public void setPreferredFormat(JQSpectrumPaletteFormats preferredFormat)
 	{
 		this.preferredFormat = preferredFormat;
 	}

@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
-import com.jwebmp.core.base.html.inputs.InputTextType;
-import com.jwebmp.core.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.inputs.*;
+import com.jwebmp.core.plugins.*;
 
 /**
  * The Spectrum Colour Picker Implementation
@@ -29,8 +29,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
  * @since 01 May 2015
  */
 @ComponentInformation(name = "Spectrum Colour Picker",
-		description = "A full featured colour picker",
-		url = "https://bgrins.github.io/spectrum/")
+                      description = "A full featured colour picker",
+                      url = "https://bgrins.github.io/spectrum/")
 public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 		extends InputTextType<J>
 {
@@ -38,21 +38,21 @@ public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 	 * The actual feature
 	 */
 	private final JQSpectrumColourPickerFeature feature;
-
+	
 	/**
 	 * Constructs a new colour picker
 	 */
 	public JQSpectrumColourPicker()
 	{
 		feature = new JQSpectrumColourPickerFeature(this);
-		addFeature(feature);
+		addAttribute("spectrum", "");
+		setInvertColonRender(true);
 	}
-
+	
 	/**
 	 * Returns any client side options available with this component
 	 *
 	 * @return Returns null currently
-	 *
 	 * @see com.jwebmp.core.base.interfaces.IComponentFeatureBase#getOptions()
 	 */
 	@Override
@@ -60,13 +60,24 @@ public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 	{
 		return feature.getOptions();
 	}
-
+	
+	@Override
+	public void init()
+	{
+		if (isInitialized())
+		{
+			return;
+		}
+		addAttribute("options", getOptions().toString(true));
+		super.init();
+	}
+	
 	@Override
 	public int hashCode()
 	{
 		return super.hashCode();
 	}
-
+	
 	@Override
 	public boolean equals(Object o)
 	{
