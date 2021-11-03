@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.jquery</groupId>
     <artifactId>jwebmp-spectrum-colour-picker</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Spectrum Colour Picker</name>
     <description>The JWebSwing implementation for Spectrum Colour Picker</description>
     <url>https://github.com/GedMarc/JWebSwing-SpectrumPlugin</url>
