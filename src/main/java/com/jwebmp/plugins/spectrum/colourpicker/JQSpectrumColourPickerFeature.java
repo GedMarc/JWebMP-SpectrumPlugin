@@ -45,8 +45,6 @@ public class JQSpectrumColourPickerFeature
 	{
 		super("JWColourPickerFeature");
 		this.picker = picker;
-		//getJavascriptReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getJavaScriptReference());
-		//getCssReferences().add(JQSpectrumColourPickerReferencePool.SpectrumColourPicker.getCssReference());
 	}
 
 	@Override

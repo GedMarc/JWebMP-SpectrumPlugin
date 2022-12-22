@@ -16,6 +16,9 @@
  */
 package com.jwebmp.plugins.spectrum.colourpicker;
 
+import com.jwebmp.core.base.angular.client.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.typescript.*;
+import com.jwebmp.core.base.html.attributes.*;
 import com.jwebmp.core.base.html.inputs.*;
 import com.jwebmp.core.plugins.*;
 
@@ -31,8 +34,11 @@ import com.jwebmp.core.plugins.*;
 @ComponentInformation(name = "Spectrum Colour Picker",
                       description = "A full featured colour picker",
                       url = "https://bgrins.github.io/spectrum/")
+@TsDependency(value = "spectrum-colorpicker", version = "*")
+@NgScript(value = "node_modules/spectrum-colorpicker/spectrum.js")
+@NgStyleSheet("node_modules/spectrum-colorpicker/spectrum.css")
 public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
-		extends InputTextType<J>
+		extends InputColourType<J>
 {
 	/**
 	 * The actual feature
@@ -42,8 +48,10 @@ public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 	/**
 	 * Constructs a new colour picker
 	 */
-	public JQSpectrumColourPicker()
+	public JQSpectrumColourPicker(String id)
 	{
+		setID(id);
+		setInputType(InputTypes.Text);
 		feature = new JQSpectrumColourPickerFeature(this);
 		addAttribute("spectrum", "");
 		setInvertColonRender(true);
@@ -68,7 +76,8 @@ public class JQSpectrumColourPicker<J extends JQSpectrumColourPicker<J>>
 		{
 			return;
 		}
-		addAttribute("options", getOptions().toString(true));
+		addAttribute("[options]", getOptions().toString(true));
+		setInvertColonRender(true);
 		super.init();
 	}
 	
