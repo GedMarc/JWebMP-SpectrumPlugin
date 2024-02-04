@@ -8,7 +8,7 @@ module com.jwebmp.plugins.spectrum.colourpicker {
 	exports com.jwebmp.plugins.spectrum.colourpicker;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 	requires com.jwebmp.core.angular;
 	
 	requires jakarta.validation;
